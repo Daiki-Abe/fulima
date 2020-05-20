@@ -11,7 +11,8 @@
           %span.bold 1
         %div
           出品数
-          %span.bold 0
+          %span.bold
+            = current_user.selling_items.count
   %section.mypage-tab-news
     %ul.mypage-tab
       %li.news-list
